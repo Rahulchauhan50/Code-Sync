@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +9,52 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #1c1e29;
+}
+html {
+  touch-action: none;
+}
+html::-webkit-scrollbar {
+  width: 0px; /* Width of the vertical scrollbar */
+}
+html::-webkit-scrollbar-thumb {
+  background-color: #1c1e29; /* Change this to your desired color */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.CodeMirror-vscrollbar::-webkit-scrollbar {
+  width: 15px; /* Width of the vertical scrollbar */
+}
+
+.CodeMirror-vscrollbar::-webkit-scrollbar-thumb {
+  background-color: #1c1e29; /* Change this to your desired color */
+}
+
+.CodeMirror-vscrollbar .CodeMirror-hscrollbar div {
+  /* Styles for the horizontal scrollbar's thumb */
+  background-color: #1c1e29; /* Change this to your desired color */
+}
+.CodeMirror-hscrollbar::-webkit-scrollbar {
+  width: 15px; /* Width of the vertical scrollbar */
+}
+
+.CodeMirror-hscrollbar::-webkit-scrollbar-thumb {
+  background-color: #1c1e29; /* Change this to your desired color */
+}
+
+.CodeMirror-hscrollbar .CodeMirror-hscrollbar div {
+  /* Styles for the horizontal scrollbar's thumb */
+  background-color: #1c1e29; /* Change this to your desired color */
+}
+
+.CodeMirror{
+  font-size: 16px;
+  line-height: 1.6;
+  padding-top: 15px;
+  touch-action: none;
+  user-zoom: fixed;
+  width: calc(100vw - 200px);
+}
+
+.CodeMirror-scrollbar-filler{
+  background-color: #282A36;
 }
